@@ -34,13 +34,18 @@ namespace AlgorithmLibrary
         }
 
 
-        //public T Dequeue()
-        //{
-        //    if(IsEmpty())
-        //    {
-        //        throw
-        //    }
-        //}
+        public T Dequeue()
+        {
+            if (IsEmpty())
+            {
+                throw new InvalidOperationException("Queue is empty");
+            }
+
+            var data = first.Data;
+            first = first.Next;
+
+            return data;
+        }
 
         public bool IsEmpty()
         {
