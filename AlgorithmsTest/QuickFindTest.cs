@@ -23,5 +23,8 @@ namespace AlgorithmsTest
             uf.Union(6, 1);
 
         }
+
+
+       
     }
 }
